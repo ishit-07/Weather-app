@@ -1,0 +1,264 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+body {
+  background: #031230;
+  max-width: 98%;
+}
+
+h3 {
+  color: #eee;
+}
+
+.wrapper {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  margin: 20px;
+  background: rgba(70, 77, 84, 0.4);
+  width: 80px;
+  height: 94vh;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.sidebar .umbrella {
+  margin-top: 20px;
+  margin-left: 16px;
+  cursor: pointer;
+}
+
+.sidebar .weather,
+.sidebar .icon-cities {
+  margin-top: 40px;
+  cursor: pointer;
+  color: white;
+  transition: 0.1s ease-in;
+}
+
+.sidebar .weather img {
+  margin-left: 16px;
+}
+
+.sidebar .icon-cities img {
+  margin-left: 19px;
+}
+
+.sidebar .weather small {
+  font-size: 12px;
+  margin-left: 10px;
+}
+
+.sidebar .icon-cities small {
+  margin-left: 13px;
+  text-align: center;
+}
+
+.sidebar .icon-cities:hover,
+.sidebar .weather:hover {
+  transform: scale(1.1);
+}
+
+/* Search Bar */
+.search {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+form {
+  display: flex;
+  position: relative;
+}
+
+.search input {
+  width: 700px;
+  background: rgba(70, 77, 84, 0.4);
+  color: #eee;
+  height: 50px;
+  border: none;
+  border-radius: 20px;
+  padding-left: 20px;
+}
+
+.search input:focus {
+  outline: none;
+}
+
+.search input ~ button {
+  position: absolute;
+  right: 0;
+  width: 60px;
+  height: 50px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background: rgba(70, 77, 84, 0.4);
+  border: none;
+  font-size: 25px;
+  color: rgba(166, 170, 174, 0.4);
+  cursor: pointer;
+}
+
+/* data */
+
+.data {
+  display: flex;
+  flex-direction: column;
+}
+
+.cities {
+  display: flex;
+  margin-top: 30px;
+  padding: 0 90px;
+  justify-content: space-between;
+}
+
+.cities .cities-data h1 {
+  color: white;
+  font-size: 40px;
+}
+
+.cities .cities-data small {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.cities .cities-data h2 {
+  color: white;
+  margin-top: 40px;
+  font-size: 50px;
+}
+
+.cities img {
+  margin: auto 0;
+}
+
+/* Air coonditions */
+
+.air-conditions {
+  margin: 68px 25px;
+  padding: 0 40px;
+  background: rgba(70, 77, 84, 0.4);
+  height: 50vh;
+  border-radius: 20px;
+}
+
+.air-conditions .flex-conditions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.air-conditions .flex-conditions h3 {
+  font-size: 18px;
+  color: rgba(226, 243, 255, 0.591);
+}
+
+.air-conditions .flex-conditions button {
+  border-radius: 10px;
+  width: 80px;
+  height: 25px;
+  color: white;
+  background: #3778f9;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.air-conditions .flex-conditions button:hover {
+  background: #031230;
+}
+
+/* Conditions */
+.conditions {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 40px;
+}
+
+.conditions i {
+  color: rgba(241, 241, 241, 0.667);
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.conditions .real-feel,
+.conditions .wind,
+.conditions .chance-of-rain,
+.conditions .uv-index,
+.conditions .humidity {
+  display: flex;
+  margin-top: 5px;
+}
+
+.conditions .wind,
+.conditions .uv-index {
+  margin-left: 70px;
+}
+
+.conditions div h3 {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 15px;
+}
+
+.conditions div h1 {
+  color: white;
+  font-size: 25px;
+  margin-top: 10px;
+}
+
+/* 7-day Forecast */
+
+.week-conditions {
+  margin-left: 30px;
+  margin-top: 90px;
+  background: rgba(70, 77, 84, 0.4);
+  border-radius: 20px;
+  padding: 40px;
+  width: 500px;
+  height: 84vh;
+}
+
+.week-conditions h1 {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 15px;
+}
+
+.week-conditions .weeks .days {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(80, 77, 77, 0.4);
+  margin-top: 30px;
+  padding-bottom: 15px;
+}
+
+.week-conditions .weeks .days:nth-child(7) {
+  border: none;
+}
+
+.week-conditions small {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.week-conditions .weeks .days div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.weeks .days div img {
+  margin-right: 10px;
+}
+
+.week-conditions p {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.week-conditions p b {
+  color: rgba(255, 255, 255, 0.938);
+}

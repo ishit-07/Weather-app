@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    <link rel="stylesheet" href="./styleMain.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="main">
+        <div class="sidebar">
+          <a href="./index.html">
+            <img
+              class="umbrella"
+              src="./images/umbrella.png"
+              width="30px"
+              height="30px"
+            />
+          </a>
+          <div class="weather">
+            <img src="./images/clear-sky.png" width="30px" height="30px" />
+            <small>Weather</small>
+          </div>
+          <div class="icon-cities">
+            <img src="./images/list (1).png" width="20px" height="20px" />
+            <small>Cities</small>
+          </div>
+        </div>
+      </div>
+
+      <!-- Data -->
+      <section class="data">
+        <div class="search">
+          <form>
+            <input type="text" placeholder="Search cities..." />
+            <button><i class="bx bx-search"></i></button>
+          </form>
+        </div>
+
+        <div class="cities">
+          <div class="cities-data">
+            <h1>Madras</h1>
+            <small>Chance of rain: 0%</small>
+            <!-- for degree sign hold alt and type '0176' and than release alt -->
+            <h2>31°</h2>
+          </div>
+          <img src="./images/sun.png" width="150px" height="150px" />
+        </div>
+
+        <!-- air conditions -->
+        <div class="air-conditions">
+          <div class="flex-conditions">
+            <h3>Air Conditions</h3>
+            <button>See more</button>
+          </div>
+          <ul class="conditions">
+            <li class="real-feel">
+              <i class="bx bxs-thermometer"></i>
+              <div>
+                <h3>Real Feel</h3>
+                <h1>30°</h1>
+              </div>
+            </li>
+            <li class="wind">
+              <i class="bx bx-wind"></i>
+              <div>
+                <h3>Wind</h3>
+                <h1>0.2 km/h</h1>
+              </div>
+            </li>
+            <li class="chance-of-rain">
+              <i class="bx bxs-droplet"></i>
+              <div>
+                <h3>Chance of rain</h3>
+                <h1>0%</h1>
+              </div>
+            </li>
+            <li class="uv-index">
+              <i class="bx bxs-sun"></i>
+              <div>
+                <h3>UV Index</h3>
+                <h1>3</h1>
+              </div>
+            </li>
+            <li class="humidity">
+              <i class="bx bxs-sun"></i>
+              <div>
+                <h3>Humidity</h3>
+                <h1>3</h1>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- 7 day Forecast -->
+      <section class="week-conditions">
+        <h1>7-Day Forecast</h1>
+        <ul class="weeks">
+          <li class="days">
+            <small>Today</small>
+            <div>
+              <img src="./images/sun (1).png" width="30px" height="30px" />
+              <h3>Sunny</h3>
+            </div>
+            <p><b>37</b>/22</p>
+          </li>
+          <li class="days">
+            <small>Tue</small>
+            <div>
+              <img src="./images/sun (1).png" width="30px" height="30px" />
+              <h3>Sunny</h3>
+            </div>
+            <p><b>37</b>/21</p>
+          </li>
+          <li class="days">
+            <small>Wed</small>
+            <div>
+              <img src="./images/sun (1).png" width="30px" height="30px" />
+              <h3>Sunny</h3>
+            </div>
+            <p><b>37</b>/21</p>
+          </li>
+          <li class="days">
+            <small>Thu</small>
+            <div>
+              <img src="./images/clouds.png" width="30px" height="30px" />
+              <h3>Cloudy</h3>
+            </div>
+            <p><b>37</b>/21</p>
+          </li>
+          <li class="days">
+            <small>Fri</small>
+            <div>
+              <img src="./images/clouds.png" width="30px" height="30px" />
+              <h3>Cloudy</h3>
+            </div>
+            <p><b>37</b>/21</p>
+          </li>
+          <li class="days">
+            <small>Sat</small>
+            <div>
+              <img src="./images/rain.png" width="30px" height="30px" />
+              <h3>Rainy</h3>
+            </div>
+            <p><b>37</b>/21</p>
+          </li>
+          <li class="days">
+            <small>Sun</small>
+            <div>
+              <img src="./images/sun (1).png" width="30px" height="30px" />
+              <h3>Sunny</h3>
+            </div>
+            <p><b>37</b>/21</p>
+          </li>
+        </ul>
+      </section>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
