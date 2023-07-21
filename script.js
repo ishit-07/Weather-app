@@ -1,4 +1,4 @@
-const API_KEY = "f5430407963f4f758c535900230604";
+const API_KEY = "<OPEN_WEATHER_API_KEY>";
 
 
 // https://api.openweathermap.org/data/3.0/onecall?lat={lat}&lon={lon}&exclude={part}&appid={API key}
