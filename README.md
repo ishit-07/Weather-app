@@ -51,6 +51,10 @@ const API_KEY = "<OPEN_WEATHER_API_KEY>";
 
 6. To search for weather information for another city, simply enter the name of the new city and repeat steps 3-5.
 
+
+https://github.com/ishit-07/Weather-app/assets/75534993/4bb7214b-e972-4cee-98ad-bfc29009f735
+
+
 ### Example
 
 Enter a city name: Pune
