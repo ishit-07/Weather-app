@@ -9,7 +9,6 @@
 
 body {
   background: #031230;
-  max-width: 98%;
 }
 
 h3 {
@@ -18,16 +17,24 @@ h3 {
 
 .wrapper {
   display: flex;
+  max-width: 95%;
+  margin: auto;
   height: 100vh;
+  margin: 20px auto;
 }
 
 .sidebar {
-  margin: 20px;
   background: rgba(70, 77, 84, 0.4);
   width: 80px;
-  height: 94vh;
   padding: 10px;
   border-radius: 15px;
+}
+
+.sidebar .umbrella-link {
+  font-size: 13px;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
 }
 
 .sidebar .umbrella {
@@ -142,28 +149,29 @@ form {
 /* Air coonditions */
 
 .air-conditions {
-  margin: 68px 25px;
-  padding: 0 40px;
+  width: 89%;
+  /* margin: 50px 25px; */
+  height: 0;
+  padding: 20px;
+  padding-bottom: 41.25%;
+  margin: auto;
   background: rgba(70, 77, 84, 0.4);
-  height: 50vh;
   border-radius: 20px;
 }
 
 .air-conditions .flex-conditions {
   display: flex;
   justify-content: space-between;
-  margin-top: 30px;
 }
 
 .air-conditions .flex-conditions h3 {
-  font-size: 18px;
+  /* font-size: 18px; */
   color: rgba(226, 243, 255, 0.591);
 }
 
 .air-conditions .flex-conditions button {
   border-radius: 10px;
-  width: 80px;
-  height: 25px;
+  padding: 5px 10px;
   color: white;
   background: #3778f9;
   border: none;
@@ -179,7 +187,7 @@ form {
 .conditions {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  margin: 40px;
+  padding: 10px;
 }
 
 .conditions i {
@@ -188,11 +196,7 @@ form {
   font-size: 18px;
 }
 
-.conditions .real-feel,
-.conditions .wind,
-.conditions .chance-of-rain,
-.conditions .uv-index,
-.conditions .humidity {
+.conditions .data-conditions{
   display: flex;
   margin-top: 5px;
 }
@@ -216,23 +220,22 @@ form {
 /* 7-day Forecast */
 
 .week-conditions {
-  margin-left: 30px;
-  margin-top: 90px;
-  background: rgba(70, 77, 84, 0.4);
+  width: auto;
+  padding: 20px;
+  padding-bottom: 42%;
   border-radius: 20px;
-  padding: 40px;
-  width: 500px;
-  height: 84vh;
+  background: rgba(70, 77, 84, 0.4);
 }
 
 .week-conditions h1 {
   color: rgba(255, 255, 255, 0.4);
   font-size: 15px;
+  margin: 10px;
 }
 
 .week-conditions .weeks .days {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   border-bottom: 1px solid rgba(80, 77, 77, 0.4);
   margin-top: 30px;
   padding-bottom: 15px;
@@ -244,11 +247,13 @@ form {
 
 .week-conditions small {
   color: rgba(255, 255, 255, 0.4);
+  font-size: 15px;
 }
 
 .week-conditions .weeks .days div {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
 }
 
 .weeks .days div img {
@@ -262,3 +267,202 @@ form {
 .week-conditions p b {
   color: rgba(255, 255, 255, 0.938);
 }
+
+@media (max-width: 768px) {
+  .wrapper {
+    flex-direction: column;
+    max-width: 90%;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+
+  .sidebar {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin: 20px auto;
+    padding: 10px;
+  }
+
+  .sidebar .umbrella,
+  .sidebar .weather,
+  .sidebar .icon-cities {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    margin: auto;
+    padding: 0;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+  }
+
+  .sidebar .icon-cities img {
+    margin: auto;
+  }
+
+  .sidebar .weather small,
+  .sidebar .icon-cities small {
+    margin: 0;
+  }
+
+  .sidebar .umbrella-link {
+    font-size: 13px;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+  }
+
+  .sidebar .weather small,
+  .sidebar .icon-cities small {
+    text-align: center;
+  }
+
+  .sidebar .weather img {
+    margin: auto;
+  }
+
+  .data .search {
+    margin: 0;
+  }
+
+  .data .search form {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+
+  .cities {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    padding: 20px 10px;
+  }
+
+  .cities .cities-data h1,
+  .cities .cities-data h2 {
+    font-size: 25px;
+  }
+
+  .cities img {
+    margin-left: 50px;
+    margin-top: 20px;
+    height: 100px;
+    width: 100px;
+  }
+
+  .air-conditions,
+  .week-conditions {
+    width: 100%;
+  }
+
+  .air-conditions {
+    height: auto;
+    padding: 20px;
+  }
+
+  .air-conditions .flex-conditions h3 {
+    font-size: 14px;
+  }
+  .air-conditions .conditions h3 {
+    font-size: 13px;
+  }
+
+  .air-conditions .conditions h1 {
+    font-size: 15px;
+  }
+
+  .week-conditions {
+    margin: 20px 0;
+    height: auto;
+    padding: 20px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1117px) {
+  .wrapper {
+    max-width: 97%;
+    position: relative;
+    margin: 20px auto;
+    height: auto;
+  }
+
+  .sidebar {
+    position: fixed;
+    height: 94vh;
+    margin: auto;
+    margin-right: 50px;
+  }
+
+  
+  .data-flex{
+    position: absolute;
+    margin-left: 80px;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    overflow-y: hidden;
+  }
+
+  .data{
+    width: 100%;
+  }
+  
+  .search{
+    width: 95%;
+  }
+
+
+  .air-conditions{
+    margin-left: 25px;
+    margin-top: 20px;
+    width: 95%;
+  }
+
+  .week-conditions{
+    width: 95%;
+    margin-left: 25px;
+    margin-top: 20px;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+  }
+
+}
+
+/* For screens larger than 1024px width (e.g., desktops) */
+@media (min-width: 1118px) {
+  .wrapper{
+    max-width: 95%;
+    height: 94vh;
+    margin: 20px auto;
+  }
+
+  .search{
+    max-width: 90%;
+    margin: auto;
+  }
+
+  .cities{
+    margin-top: 40px;
+  }
+
+  .data{
+    margin: 0 auto;
+  }
+
+  .data-flex{
+    display: flex;
+    width: 92%;
+  }
+
+  .data .air-conditions{
+    margin-top: 70px;
+  }
+
+  .week-conditions{
+    width: 70%;
+  }
+}
+
+

@@ -1,4 +1,4 @@
-const API_KEY = "<OPEN_WEATHER_API_KEY>";
+const API_KEY = "f5430407963f4f758c535900230604";
 
 
 // https://api.openweathermap.org/data/3.0/onecall?lat={lat}&lon={lon}&exclude={part}&appid={API key}
@@ -44,6 +44,7 @@ const fetchData = async (targetLocation) => {
   let realFeelData = data.current.feelslike_c;
   let humidityData = data.current.humidity;
 
+
   updataDetails(
     locationNameData,
     weatherImageData,
@@ -86,7 +87,7 @@ function search(e) {
   target = searchDetail.value;
   fetchData(target);
 }
-
+/* 
 const days = [
   "Sunday",
   "Monday",
@@ -116,3 +117,4 @@ const date = time.getDay();
 const month = time.getMonth();
 console.log(days[date]);
 console.log(months[month]);
+ */
