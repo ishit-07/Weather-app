@@ -1,5 +1,3 @@
-> **Note**: 🚧 This project is Work-In-progres
-
 # WeatherApp
 
 WeatherApp is a simple and intuitive weather application that provides current weather information for any city in the world. It utilizes the OpenWeather API to fetch real-time weather data and presents it in a user-friendly manner.
