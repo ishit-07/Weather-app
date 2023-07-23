@@ -2,6 +2,7 @@
 
 WeatherApp is a simple and intuitive weather application that provides current weather information for any city in the world. It utilizes the OpenWeather API to fetch real-time weather data and presents it in a user-friendly manner.
 
+
 ## Key Features
 
 - **Current Weather**: Get instant access to the current weather conditions of any city.
