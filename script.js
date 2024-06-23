@@ -3,6 +3,7 @@ const API_KEY = "f5430407963f4f758c535900230604";
 
 // https://api.openweathermap.org/data/3.0/onecall?lat={lat}&lon={lon}&exclude={part}&appid={API key}
 
+
 let searchDetail = document.querySelector(".search input");
 let formSumbmit = document.querySelector("form");
 
@@ -18,6 +19,7 @@ let wind = document.querySelector(".wind h1");
 let chanceOfRain = document.querySelector(".chance-of-rain h1");
 let UVIndex = document.querySelector(".uv-index h1");
 let humidity = document.querySelector(".humidity h1");
+
 
 formSumbmit.addEventListener("submit", search);
 
@@ -87,34 +89,37 @@ function search(e) {
   target = searchDetail.value;
   fetchData(target);
 }
-/* 
-const days = [
-  "Sunday",
-  "Monday",
-  "Tuesday",
-  "Wednesday",
-  "Thursday",
-  "Friday",
-  "Saturday",
-];
-const months = [
-  "January",
-  "Feburary",
-  "March",
-  "April",
-  "May",
-  "June",
-  "July",
-  "August",
-  "September",
-  "October",
-  "November",
-  "December",
-];
 
-const time = new Date();
-const date = time.getDay();
-const month = time.getMonth();
-console.log(days[date]);
-console.log(months[month]);
- */
+
+// const days = [
+//   "Sunday",
+//   "Monday",
+//   "Tuesday",
+//   "Wednesday",
+//   "Thursday",
+//   "Friday",
+//   "Saturday",
+// ];
+
+
+// const months = [
+//   "January", 
+//   "Feburary",
+//   "March",
+//   "April",
+//   "May",
+//   "June",
+//   "July",
+//   "August",
+//   "September",
+//   "October",
+//   "November",
+//   "December",
+// ];
+
+
+// const time = new Date();
+// const date = time.getDay();
+// const month = time.getMonth();
+// console.log(days[date]);
+// console.log(months[month]);
